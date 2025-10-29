@@ -1,0 +1,36 @@
+header h1 {
+    color: #000;
+    text-align: center;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.40);
+    font-family: "Lilita One";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+header h2 {
+    color: #000;
+    text-align: center;
+    font-family: "Libre Caslon Text";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+button {
+    width: 424px;
+    height: 123px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    font-family: "Lilita One";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.40);
+    background-image: linear-gradient(to green, yellow, blue);
+}
