@@ -29,14 +29,14 @@ button {
     text-shadow: 0 5px 5px rgba(0, 0, 0, 0.40);
 }
 
-main {
+body {
     display: flex;
     flex-direction: column;
     gap: 40px;
     background-color: #EDFFEE;
 }
 
-body p:nth-child(2) {
+main p:nth-child(1) {
     font-family: "Lilita One";
     font-size: 48px;
     color: #000;
@@ -45,12 +45,12 @@ body p:nth-child(2) {
     text-decoration: underline;
 }
 
-body p:nth-child(2):hover {
+main p:nth-child(1):hover {
     cursor: pointer;
     color: blue;
 }
 
-body p:nth-child(3) {
+main p:nth-child(2) {
     grid-column: 1 / 2;
     display: flex;
     width: 635px;
