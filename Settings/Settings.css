@@ -1,35 +1,99 @@
-nav{
-display: flex;
-font-size: xx-large;
-text-align: left;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+nav {
+    background-color: beige;
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row;
+    align-items: center;
+    padding: 10px 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+nav img {
+    width: 30%;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+nav img:hover {
+    transform: scale(1.1);
+}
+
+nav p {
+    font-weight: 600;
+    font-size: 130%;
+    cursor: pointer;
+    color: #000000;
+    transition: 0.3s;
+    border: solid 1px #000000;
+    padding: 15px 30px;
+    border-radius: 20px;
+}
+
+nav p:hover {
+    transform: scale(1.1);
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .sidebar{
 width: 100px;
-padding: 100px 0;
+padding: 200px 0;
 font-size: 90px;
 writing-mode: vertical-rl;
 display: flex;
 align-items: center;
-margin-top: 5%;
 width: 400px;
-height: 1024px;
+height: 100%;
 flex-shrink: 0;
 background: #EDFFEE;
+transform: rotate(180deg);
+letter-spacing: 50px;
 
+}
+
+.starr{
+    display:flex;
+    width: 100px;
+    margin-left: 30%;
+    }
+    
+
+.Go-back1{
+    display:flex;
+    width: 150px;
 }
 
 .no-bullets{
-list-style-type: none;
 display: flex;
 text-align: center;
 flex-direction: column;
-font-size: xxx-large;
-margin-top: -60%;
+font-size: xx-large;
+margin-top: -71%;
 line-height: 380%;
-
-
 }
+
+
+
 
 .boxplz {
 display: flex;
