@@ -1,0 +1,42 @@
+nav{
+display: flex;
+flex-direction: column;
+width: 400px;
+height: 1024px;
+flex-shrink: 0;
+background: #EDFFEE;
+line-height: 100%;
+font-size: x-large;
+}
+
+.MAP{
+display: flex;
+margin-left: 45%;
+margin-top: -75%;
+font-size: xxx-large;
+}
+
+.JK{
+    display: flex;
+    margin-left: 52%;
+    margin-top: 4%;
+    font-size: xx-large;
+}
+
+.EP{
+    display: flex;
+    margin-left: 56%;
+    margin-top: 30%;
+    font-size: x-large;
+}
+
+
+.PetDescc{
+    display: flex;
+    margin-left: 59%;
+    margin-top: 10%;
+    font-size: xxx-large;
+
+
+
+}
