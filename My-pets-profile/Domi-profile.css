@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: 'Lilita One', sans-serif;
+    background-color: #EDFFEE;
+    color: #2b2b2b;
+    text-align: center;
+}
+
+.Go-back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.Go-back:hover {
+    transform: scale(1.1);
+}
+
+header {
+    background-color: beige;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    color: #000000;
+    font-size: xx-large;
+}
+
+.Activity, .Calendar {
+    display: inline-block;
+    margin: 20px;
+    padding: 8px 16px;
+    background-color: #C3E8C4;
+    border-radius: 20px;
+    font-size: large;
+    color: #355835;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Activity:hover, .Calendar:hover {
+    background-color: #a7d3a8;
+}
+
+section {
+    background-color: #ffffff;
+    margin: 40px auto;
+    width: 320px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.Domi {
+    font-size: 27px;
+    color: #3c6e47;
+    margin-bottom: 10px;
+}
+
+.Domi-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #C3E8C4;
+}
+
+
+.Theme {
+    margin-top: 15px;
+    color: #3c6e47;
+    font-size: large;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.Theme:hover {
+    color: #1a241d;
+}

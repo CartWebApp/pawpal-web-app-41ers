@@ -3,23 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Donald-activity.css">
+    <link rel="stylesheet" href="Bruno-activity.css">
     <title>Document</title>
 </head>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const editWeight = document.querySelector('.Weight .edit');
+    const weightValue = document.querySelector('.Weight p:not(.edit)');
+    const notesSection = document.querySelector('.Notes');
+    const notesText = notesSection.querySelector('p');
+
+    // Make weight editable on click
+    editWeight.addEventListener('click', () => {
+        const newWeight = prompt("Enter Donalds's new weight:", weightValue.textContent);
+        if (newWeight) {
+            weightValue.textContent = newWeight;
+        }
+    });
+
+    // Make notes editable
+    notesText.addEventListener('click', () => {
+        const textarea = document.createElement('textarea');
+        textarea.value = notesText.textContent === 'Type here...' ? '' : notesText.textContent;
+        notesSection.replaceChild(textarea, notesText);
+
+        textarea.focus();
+
+        // Save note when clicking outside
+        textarea.addEventListener('blur', () => {
+            const newText = textarea.value.trim() || 'Type here...';
+            notesText.textContent = newText;
+            notesSection.replaceChild(notesText, textarea);
+        });
+    });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Weight edit
+    const editWeight = document.querySelector('.Weight .edit');
+    const weightSection = document.querySelector('.Weight');
+    const weightValue = weightSection.querySelector('p:not(.edit)');
+
+    editWeight.addEventListener('click', () => {
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.value = weightValue.textContent;
+        weightSection.replaceChild(input, weightValue);
+        input.focus();
+
+        const saveWeight = () => {
+            const newWeight = input.value.trim() || '67 pounds';
+            weightValue.textContent = newWeight;
+            weightSection.replaceChild(weightValue, input);
+        };
+
+        // Save on blur or Enter
+        input.addEventListener('blur', saveWeight);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                saveWeight();
+            }
+        });
+    });
+
+    // Notes edit
+    const notesSection = document.querySelector('.Notes');
+    const notesText = notesSection.querySelector('p');
+
+    notesText.addEventListener('click', () => {
+        const textarea = document.createElement('textarea');
+        textarea.value = notesText.textContent === 'Type here...' ? '' : notesText.textContent;
+        notesSection.replaceChild(textarea, notesText);
+        textarea.focus();
+
+        textarea.addEventListener('blur', () => {
+            const newText = textarea.value.trim() || 'Type here...';
+            notesText.textContent = newText;
+            notesSection.replaceChild(notesText, textarea);
+        });
+    });
+});
+</script>
 <body>
-<h1> Donald's Steps </h1>
-<p> Average daily steps: </p>
-<h3> 4,167 </h3>
-<p> Avg. Steps </p>
-<p> Steps: </p>
-<ul>
-    <li> M </li>
-    <li> T </li>
-    <li> W </li>
-    <li> T </li>
-    <li> F </li>
-    
-</ul>    
-    
+    <a href="/My-pets-profile/Brunos-profile.html">
+        <img class="Go-back" src="/images/Go-bakc button.png">
+    </a>
+    <header>
+        <h1> Donalds's Activity </h1>
+    </header>
+    <section class="Steps">
+        <p> Steps per week: </p>  
+        <img class="Graph" src="/images/Graph.png">
+    </section>
+    <section class="Health">
+        <section class="Weight">
+            <h3 >Weight:</h3>
+            <p>41 pounds</p>
+            <p class="edit">edit</p>
+        </section>
+        <section class="Notes">
+            <h3>Notes:</h3>
+            <p>Type here...</p>
+        </section>
+    </section>
+    <section class="theme">
+        <p>Change theme</p>
+    </section>
 </body>
 </html>
