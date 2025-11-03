@@ -1,0 +1,53 @@
+
+nav{
+display: flex;
+flex-direction: column;
+margin-top: 6.5%;
+line-height: 60%;
+width: 400px;
+height: 1024px;
+flex-shrink: 0;
+background: #EDFFEE;
+font-size: xx-large;
+}
+
+.Mydeats {
+display: flex;
+margin-left: 45%;
+margin-top: -59%;
+}
+
+.CDB{
+display: flex;
+display: flex;
+margin-left: 42%;
+margin-top: 5%;
+font-size: xx-large;
+}
+
+.SubStat{
+display: flex;
+font-size: xxx-large;
+margin-left: 40%;
+margin-top: -6%;
+}
+
+ul{
+display: flex;
+margin-left: 80%;
+font-size: xx-large;
+flex-direction: column;
+}
+
+.VEyeP{
+display: flex;
+margin-top: 1%;
+font-size: xxx-large;
+margin-left: 48%;
+}
+
+
+
+
+
+
