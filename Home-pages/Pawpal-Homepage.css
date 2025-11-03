@@ -19,21 +19,21 @@ nav {
     background-color: beige;
     display: flex;
     justify-content: space-around;
+    flex-direction:row;
     align-items: center;
     padding: 10px 10px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-    top: 0;
-    width: 100%;
 }
-
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
 nav img {
-    width: 5%;
+    width: 30%;
     border-radius: 50%;
     transition: 0.3s;
-}
-
-nav img:nth-child(3) {
-    border: solid 1px;
 }
 
 nav img:hover {
@@ -41,7 +41,6 @@ nav img:hover {
 }
 
 nav p {
-    margin: 0;
     font-weight: 600;
     font-size: 130%;
     cursor: pointer;
