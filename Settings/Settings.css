@@ -71,24 +71,15 @@ letter-spacing: 50px;
 
 }
 
-.starr{
-    display:flex;
-    width: 100px;
-    margin-left: 30%;
-    }
-    
 
-.Go-back1{
-    display:flex;
-    width: 150px;
-}
+    
 
 .no-bullets{
 display: flex;
 text-align: center;
 flex-direction: column;
-font-size: xx-large;
-margin-top: -71%;
+font-size: x-large;
+margin-top: -48%;
 line-height: 380%;
 }
 
