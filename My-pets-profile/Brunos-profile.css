@@ -56,13 +56,13 @@ section {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.Bruno {
+.Pet {
     font-size: 27px;
     color: #3c6e47;
     margin-bottom: 10px;
 }
 
-.Bruno-image {
+.Pet-image {
     width: 180px;
     height: 180px;
     border-radius: 50%;
