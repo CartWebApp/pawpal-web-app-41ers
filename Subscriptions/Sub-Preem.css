@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lilita One', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: #2b2b2b;
+    text-align: center;
+}
+
+.Go-back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.Go-back:hover {
+    transform: scale(1.1);
+}
+
+Header {
+    color: #000;
+    text-align: center;
+    font-family: 'Lilita One', sans-serif;
+    font-size: xx-large;
+    font-weight: 400;
+    padding: 10px;
+}
+
+main {
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 30px 0px;
+    margin: 10%;
+    padding-top: 50px;
+    border-radius: 15px;
+    background-color: lightgrey;
+}
+
+.FirstName {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: large;
+}
+
+.Type1 {
+    background-color: grey;
+    padding: 10px;
+}
+
+.LastName {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    font-size: large;
+}
+
+.Type2 {
+    background-color: grey;
+    padding: 10px;
+}
+
+.Type-card {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: large;
+}
+
+.Type3 {
+    background-color: grey;
+    padding: 10px;
+}
+
+.Card-number {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    font-size: large;
+}
+
+.Type4 {
+    background-color: grey;
+    padding: 10px;
+}
+
+.Verification-number {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    font-size: large;
+}
+
+.Type5 {
+    background-color: grey;
+    padding: 10px;
+}
+
+.Expiration-date {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    font-size: large;
+}
+
+.Month-Year {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Type6 {
+    width: 40%;
+    background-color: grey;
+    padding: 10px;
+}
+
+.Type7 {
+    width: 40%;
+    background-color: grey;
+    padding: 10px;
+}
+
+.Confirm {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: -40%
+}

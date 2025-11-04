@@ -23,6 +23,9 @@ Header {
 
 .Email {
     width: 30%;
+    display:flex;
+    flex-direction: column;
+    align-self: center ;
 }
 
 .Type1 {
@@ -32,6 +35,9 @@ Header {
 
 .Password {
     width: 30%;
+    display:flex;
+    flex-direction: column;
+    align-self: center ;
 }
 .Type2 {
     background-color: grey;

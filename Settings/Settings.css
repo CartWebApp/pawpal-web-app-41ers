@@ -8,6 +8,10 @@ html {
     height: 100%;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+}
 nav {
     background-color: beige;
     display: flex;
@@ -33,6 +37,7 @@ nav img:hover {
     transform: scale(1.1);
 }
 
+
 nav p {
     font-weight: 600;
     font-size: 130%;
@@ -48,79 +53,62 @@ nav p:hover {
     transform: scale(1.1);
 }
 
-body {
-    background-color: #ffffff;
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
+.sidebar {
+    background-color: #e8f5e9;
+    width: 20%;
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #ccc;
 }
 
-.sidebar{
-width: 100px;
-padding: 200px 0;
-font-size: 90px;
-writing-mode: vertical-rl;
-display: flex;
-align-items: center;
-width: 400px;
-height: 100%;
-flex-shrink: 0;
-background: #EDFFEE;
-transform: rotate(180deg);
-letter-spacing: 50px;
-
+.sidebar p {
+    font-size: xx-large;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #2b2b2b;
+    transform: rotate(-90deg);
+    letter-spacing: 20px;
 }
 
-
-    
-
-.no-bullets{
-display: flex;
-text-align: center;
-flex-direction: column;
-font-size: x-large;
-margin-top: -48%;
-line-height: 380%;
+.no-bullets {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px 80px;
 }
 
-
-
-
-.boxplz {
-display: flex;
-margin-left: 40%;
-border: solid;
-margin-right: 39%;
+.no-bullets a {
+    text-decoration: none;
 }
 
-.boxdeets{
-display: flex;
-margin-left: 40%;
-border: solid;
-margin-right: 48%;
-margin-top: 5%;
+.no-bullets li {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    padding: 18px 25px;
+    font-size: large;
+    font-weight: 600;
+    color: #000;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    width: 60%;
 }
 
-.boxPs{
-display: flex;
-margin-left: 40%;
-border: solid;
-margin-right: 39%;
-margin-top: 5%;
+.no-bullets li::before {
+    content: "*";
+    color: #81c784;
+    font-size: large;
 }
 
-.boxnotis{
-display: flex;
-margin-left: 40%;
-border: solid;
-margin-right: 45%;
-margin-top: 5%;
-}
-
-.boxact{
-display: flex;
-margin-left: 40%;
-border: solid;
-margin-right: 46%;
-margin-top: 5%;
+.no-bullets li:hover {
+    background-color: #f1f8e9;
+    transform: scale(1.03);
 }
