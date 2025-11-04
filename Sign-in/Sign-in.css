@@ -1,6 +1,101 @@
-h1{
-text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+Header {
+    color: #000;
+    text-align: center;
+    font-family: 'Lilita One', sans-serif;
+    font-size: xx-large;
+    font-weight: 400;
+    padding: 10px;
+    margin-bottom: 5%;
+}
 
+.Enter {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
 
+.Email {
+    width: 30%;
+}
+
+.Type1 {
+    background-color: grey;
+    padding: 10px;
+}
+
+.Password {
+    width: 30%;
+}
+.Type2 {
+    background-color: grey;
+    padding: 10px;
+}
+
+.Next a {
+    font-size: x-large;
+    text-decoration: none;
+    color: #000;
+}
+
+.Next a:hover {
+    color: blue ;
+    text-decoration: underline;
+}
+
+.Create-acc a {
+    text-decoration: none;
+}
+
+.Create-acc a:hover {
+    text-decoration: underline;
+}
+
+.SignIn {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Google {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.FaceBook {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.Google-image {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    left: 35%;
+}
+
+.FaceBook-image {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    left: 35%;
+}
+
+.Google p {
+    font-size: x-large;
+}
+
+.FaceBook p {
+    font-size: x-large;
 }
