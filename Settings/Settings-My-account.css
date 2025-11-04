@@ -147,3 +147,69 @@ main header h1 {
 .Edit-Description:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 900px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px 10px;
+        box-shadow: none;
+        border-right: none;
+        border-bottom: 2px solid #ccc;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .sidebar li {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+        border-radius: 8px;
+    }
+
+    .sidebar li.Log-out {
+        margin-top: 0;
+    }
+
+    main {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    main header h1 {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
+
+    .Jarl-Kettlebox-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .Text {
+        font-size: 1.1rem;
+    }
+
+    .Description {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+    .Go-back {
+        width: 50px;
+        top: 10px;
+        left: 10px;
+    }
+}

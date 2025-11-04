@@ -128,3 +128,23 @@ main a, main p {
     text-decoration: none;
     color: black;
 }
+
+@media (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr; /* single column */
+        gap: 30px;
+        padding: 20px 30px;
+        margin: 0 10%;
+    }
+
+    main a img {
+        width: 100%; /* fill container width */
+        height: auto;
+        margin-bottom: 8px;
+    }
+
+    main p {
+        font-size: 1rem;
+        padding: 6px 0;
+    }
+}

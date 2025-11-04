@@ -112,3 +112,53 @@ nav p:hover {
     background-color: #f1f8e9;
     transform: scale(1.03);
 }
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 2px solid #ccc;
+        justify-content: flex-start;
+        padding: 10px 0;
+    }
+
+    .sidebar p {
+        transform: rotate(0deg);
+        letter-spacing: 5px;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .no-bullets {
+        padding: 30px 20px;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .no-bullets li {
+        width: 90%;
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav img {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    nav p {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}

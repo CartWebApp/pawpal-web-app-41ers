@@ -88,3 +88,41 @@ section {
 .Theme:hover {
     color: #1a241d;
 }
+
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .Activity, .Calendar {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    section {
+        width: 85%;
+        padding: 20px;
+    }
+
+    .Pet {
+        font-size: 1.4rem;
+    }
+
+    .Pet-image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .Theme {
+        font-size: 1rem;
+    }
+
+    .Go-back {
+        width: 50px;
+        top: 10px;
+        left: 10px;
+    }
+}
